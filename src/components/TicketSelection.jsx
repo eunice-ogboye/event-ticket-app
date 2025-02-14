@@ -7,7 +7,7 @@ export default function TicketSelection({ nextStep }) {
   const isNextDisabled = !selectedPlan || !ticketCount || ticketCount <= 0;
 
   return (
-    <div className="bg-[#02191D] p-6 md:p-12 text-[#FAFAFA] rounded-[40px] shadow-md border border-[#0E464F] w-[700px] mx-auto flex flex-col gap-8">
+    <div className="bg-[#02191D] p-6 md:p-12 text-[#FAFAFA] rounded-[40px] shadow-md border border-[#0E464F] mx-auto flex flex-col gap-8 lg:w-[700px] sm:w-[335px]">
       {/* Header */}
       <div className="flex flex-col sm:flex-row justify-between items-center w-full">
         <h3 className="text-2xl sm:text-3xl">Ticket Selection</h3>
@@ -22,13 +22,13 @@ export default function TicketSelection({ nextStep }) {
       {/* Event Details */}
       <div className="bg-[#08252B] p-6 rounded-[32px] border border-[#0E464F] w-full">
         <div
-          className="w-full max-w-[556px] mx-auto p-6 rounded-[24px] border border-[#07373F] border-r-2 border-b-2 border-l-2 bg-opacity-10 backdrop-blur-[14px] underline text-center"
+          className="w-full max-w-[556px] mx-auto p-6 rounded-[24px] border border-[#07373F] border-r-2 border-b-2 border-l-2 bg-opacity-10 backdrop-blur-[14px] lg:underline text-center sm:no-underline"
           style={{
             background:
               "linear-gradient(0deg, rgba(10, 12, 17, 0.1), rgba(10, 12, 17, 0.1)), radial-gradient(103.64% 57.39% at 14.02% 32.06%, rgba(36, 160, 181, 0.2) 0%, rgba(36, 160, 181, 0) 100%)",
           }}
         >
-          <h1 className="font-[Road Rage] text-4xl sm:text-5xl leading-[62px] tracking-[0%]">
+          <h1 className="font-[Road Rage] text-4xl sm:text-2xl leading-[62px] tracking-[0%]">
             Techember Fest ”25
           </h1>
           <p className="text-sm sm:text-base">Join us for an unforgettable experience at [Event Name]! Secure your spot now.</p>
